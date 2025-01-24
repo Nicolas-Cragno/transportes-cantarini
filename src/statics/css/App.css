@@ -1,0 +1,59 @@
+.app{
+    background-image: url('../img/truckBackground.svg');
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
+    font-size:x-large;
+    background-repeat: repeat-x;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Columnas laterales / menú de secciones */
+
+.leftCol{
+    background-color: black;
+    height: 90vh;
+    margin-left: -20vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items:first baseline;
+}
+
+.listLink{
+    color: white;
+    font-size: larger;
+    padding: 1.5vh;
+    margin: 1vh;
+    text-decoration: none;
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+
+.listLink:hover{
+    border-left-color: white;
+}
+
+.option{
+    height: 90vh;
+    margin-left: 20vh;
+    padding-top: 10vh;
+}
+
+.firstOption{
+    display: none;
+}
+
+.secondOption{
+    display: none;
+}
+
+.thirdOption{
+    display: none;
+}
+
+.whiteText{
+    color: white;
+}

@@ -1,0 +1,36 @@
+.appHeader{
+    background-color: #282c34;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    color: white;
+}
+
+.headerLeft{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.headerLogo{
+    width: 10vh;
+}
+
+.headerRight{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navBarLink{
+    color: white;
+    padding: 1.5vh;
+    margin: 1vh;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+}
+
+.navBarLink:hover{
+    border-bottom-color: white;
+}
