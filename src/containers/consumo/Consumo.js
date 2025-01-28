@@ -36,8 +36,8 @@ export default function Consumo() {
       <Row>
         <Col md={3} className='leftCol'>
           <ListGroup as="ul">
-            <Link to={'/consumo'} className='listLink' onClick={() => {mostrar(1)}}>CARGAR TRAMO</Link>
-            <Link to={'/consumo'} className='listLink' onClick={() => {mostrar(2)}}>VER VIAJES</Link>
+            <Link to={'/consumo'} className='listLink' onClick={() => {mostrar(1)}}>NUEVA CARGA</Link>
+            <Link to={'/consumo'} className='listLink' onClick={() => {mostrar(2)}}>PROMEDIOS</Link>
             <Link to={'/consumo'} className='listLink' onClick={() => {mostrar(3)}}>COMPARATIVAS</Link>
           </ListGroup>
         </Col>

@@ -64,10 +64,11 @@
 }
 
 .nuevoTramo{
-    background-color: burlywood;
-    width: 65vh;
-    padding: 5px;
-    margin: 5px;
+    background-color: #282c34;
+    color: white;
+    width: 70vh;
+    padding: 10px;
+    margin-left: 5px;
     border-radius: 5px;
 }
 
@@ -88,9 +89,11 @@
 
 .deleteBtn{
     border-radius: 50%;
-    width: 2.5vh;
-    height: 2.5vh;
+    width: 3vh;
+    height: 3vh;
     background-color: red;
+    color: white;
+    font-size: X-small;
 }
 
 .combustibleTotales{
@@ -126,4 +129,13 @@
     width: 22vh;
     height: 5.5vh;
     font-weight: bold;
+}
+
+.windowScroll{
+    scroll-behavior: auto;
+    height: 35vh;
+    width: 80vh;
+    overflow-y: scroll;
+    scrollbar-color: white   #222; /* color barra - color fondo */
+    scrollbar-width: thin; /* barra scroll delgada */
 }

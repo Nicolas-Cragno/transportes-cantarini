@@ -3,6 +3,16 @@ import { Container, Row, Col } from 'react-bootstrap';
 import NuevoTramo from './NuevoTramo';
 
 export default function RegistrarViaje() {
+    let viaje = document.getElementById("inputViaje").value;
+    let fecha = document.getElementById("inputFecha").value;
+    let chofer = document.getElementById("inputChofer").value;
+    let interno = document.getElementById("inputInterno").value;
+    
+    /*
+    const agregarCarga = () => {
+        console.log("viaje " + viaje + "fecha " + fecha + "manejado por " + chofer + " (" + interno + ").");
+    } 
+    */
   return (
     <div className='registrarViaje'>
         <form>
@@ -11,19 +21,19 @@ export default function RegistrarViaje() {
                     <Row>
                         <Col md={2}>
                             <label className='shortLabel'>N° VIAJE</label>
-                            <input type="text" name="" className='shortInput'/>   
+                            <input type="text" name="" className='shortInput' id='inputViaje'/>   
                         </Col>
                         <Col md={3}>
                             <label className='shortLabel'>FECHA</label>
-                            <input type='date' name="date" className='mediumInput'/>
+                            <input type='date' name="date" className='mediumInput' id='inputFecha'/>
                         </Col>
                         <Col md={5}>
                             <label className='shortLabel'>CHOFER</label>
-                            <input type='name' name='name' className='longInput'></input>
+                            <input type='name' name='name' className='longInput' id='inputChofer'></input>
                         </Col>
                         <Col md={2}>
                             <label className='shortLabel'>INTERNO</label>
-                            <input type='number' className='shortInput'></input>
+                            <input type='number' className='shortInput' id='inputInterno'></input>
                         </Col>
                         <hr/>
                     </Row>
@@ -71,11 +81,18 @@ export default function RegistrarViaje() {
                         </Row>
                     </Col>
                     <Col md={9}>
+                        <Row>
+                            <Col xs={12} className='windowScroll'>
+                                <NuevoTramo nroTramo='1'></NuevoTramo><br/>
+                                <NuevoTramo nroTramo='2'></NuevoTramo><br/>
+                                <NuevoTramo nroTramo='3'></NuevoTramo><br/>
+                                <NuevoTramo nroTramo='4'></NuevoTramo><br/>
+                                <NuevoTramo nroTramo='5'></NuevoTramo><br/>
+                            </Col>
+                        </Row>
+                        <NuevoTramo nroTramo='FIN'></NuevoTramo><br/>
                         <button className='plusBtn' alt=''>+ AGREGAR CARGA</button>
                     </Col>
-                    {/*
-                    <Col md={9}><NuevoTramo></NuevoTramo></Col>
-                    */}
                 </Row>
             </Container>
         </form>
