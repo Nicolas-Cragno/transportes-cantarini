@@ -15,7 +15,7 @@ export default function NuevoTramo(props) {
                         <Col md={4}>
                             <Row>
                                 <Col xs={12}>
-                                    <label>Litros</label>
+                                    <label>Fecha</label>
                                 </Col>
                                 <Col xs={12}>
                                 <input type='date' name="date" className='mediumInput'/>
@@ -28,7 +28,7 @@ export default function NuevoTramo(props) {
                                     <label>Litros</label>
                                 </Col>
                                 <Col xs={12}>
-                                <input type='decimal' className='shortInput'/>
+                                <input type='decimal' className='shortInput' id='cantidadLitros' defaultValue={'0'}/>
                                 </Col>
                             </Row>
                         </Col>

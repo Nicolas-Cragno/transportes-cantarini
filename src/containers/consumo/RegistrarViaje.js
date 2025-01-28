@@ -1,15 +1,16 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import NuevoTramo from './NuevoTramo';
+import FormularioCargas from './FomularioCargas';
 
 export default function RegistrarViaje() {
+    /*
+    const calcularConsumo = () => {
     let viaje = document.getElementById("inputViaje").value;
     let fecha = document.getElementById("inputFecha").value;
     let chofer = document.getElementById("inputChofer").value;
     let interno = document.getElementById("inputInterno").value;
     
-    /*
-    const agregarCarga = () => {
         console.log("viaje " + viaje + "fecha " + fecha + "manejado por " + chofer + " (" + interno + ").");
     } 
     */
@@ -78,20 +79,15 @@ export default function RegistrarViaje() {
                             <Col md={7}>
                                 <label>c/100</label>
                             </Col>
+                            {/*
+                            <button className='plusBtn' onClick={calcularConsumo}>+ CALCULAR</button>
+                            */}
                         </Row>
+                        
                     </Col>
                     <Col md={9}>
-                        <Row>
-                            <Col xs={12} className='windowScroll'>
-                                <NuevoTramo nroTramo='1'></NuevoTramo><br/>
-                                <NuevoTramo nroTramo='2'></NuevoTramo><br/>
-                                <NuevoTramo nroTramo='3'></NuevoTramo><br/>
-                                <NuevoTramo nroTramo='4'></NuevoTramo><br/>
-                                <NuevoTramo nroTramo='5'></NuevoTramo><br/>
-                            </Col>
-                        </Row>
-                        <NuevoTramo nroTramo='FIN'></NuevoTramo><br/>
-                        <button className='plusBtn' alt=''>+ AGREGAR CARGA</button>
+                            <NuevoTramo></NuevoTramo><br/>
+                            <FormularioCargas></FormularioCargas>
                     </Col>
                 </Row>
             </Container>
